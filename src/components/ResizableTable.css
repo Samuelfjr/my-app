@@ -1,0 +1,31 @@
+.resizable-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.resizable-table th {
+  position: relative;
+  padding: 8px;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.resizable-table .resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  cursor: col-resize;
+  background-color: transparent;
+}
+
+.resizable-table .resizer:hover {
+  background-color: #ddd;
+}
+
+.resizable-table tbody .truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
